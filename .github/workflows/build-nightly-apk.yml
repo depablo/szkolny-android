@@ -9,7 +9,7 @@ on:
 jobs:
   prepare:
     name: Prepare build environment
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     outputs:
       hasNewChanges: ${{ steps.nightly.outputs.hasNewChanges }}
     steps:
